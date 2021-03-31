@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.heart{
+ position: fixed;
+ top: -3vh;
+ transform: translateY(0);
+ animation: fall 3s ease-in-out;  
+ color: red; 
+}
+
+@keyframes fall{
+    to{
+        transform: translateY(100vh);
+    }
+}
+
+#btn{
+    background-color: purple;
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px black;
+}
+
